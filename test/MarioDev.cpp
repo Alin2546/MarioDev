@@ -5,16 +5,16 @@
 
 /*
  * LEGENDA HĂRȚII (Semnificația caracterelor):
- * '.' = Spațiu liber / Aer (fără coliziune, fără desenare)
- * 'n' = Nor pe cer (decorativ)
+ * '.' = Spațiu liber / Aer
+ * 'n' = Nor pe cer
  * 'b' = Bloc căramidă (solid, distructibil/util)
- * 'S' = Bloc secret / întrebare (solid)
- * 't' = Colțul stânga-sus al unei țevi mari (desenează imaginea țevii)
- * 'i' = Bloc invizibil/suport pentru țeavă sau Bowser (asigură coliziunea corectă fără a desena imagini duplicate)
- * 'B' = Colțul stânga-sus al lui Bowser (desenează imaginea inamicului principal)
- * 'P' = Prințesa (obiectivul final de la sfârșitul nivelului)
- * 's' = Colțul stânga-sus al steagului (desenează imaginea steagului înalt)
- * 'g' = Inamic Goomba (generat automat la pornirea jocului)
+ * 'S' = Bloc secret / întrebare
+ * 't' = Teava verde din mario
+ * 'i' = Bloc invizibil (coliziunea invizibila)
+ * 'B' = Monstrul din mario Bowser
+ * 'P' = Prințesa
+ * 's' = Steagul de la final
+ * 'g' = Inamic Goomba
  * 'p' = Bloc de pământ solid (solul pe care calcă personajele)
  */
 
@@ -272,7 +272,7 @@ int main() {
                         if (vieti <= 0) {
                             outtextxy(230, 170, (char *) "GAME OVER");
                             swapbuffers();
-                            delay(3000); // Pauza 3 secunde
+                            delay(3000);
                             inJoc = false;
                         } else {
                             outtextxy(260, 170, (char *) "AI MURIT!");
