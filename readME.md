@@ -61,7 +61,7 @@ const char jos[2][LUNGIME_HARTA + 1] = {
 ### Blocuri Solide (Coliziune Activă)
 Acestea sunt elementele prin care jucătorul și inamicii nu vor putea trece:
 * `p` - **Pământ / Sol:** Platforma principală pe care se vor deplasa entitățile.d
-* <img src="cmake-build-debug/blocPamant.jpg" width="40" height="40" alt="Descriere poza">
+* <img src="test/ImaginiMario/blocPamant.jpg" width="40" height="40" alt="Descriere poza">
 * `b` - **Cărămidă:** Bloc solid de decor, cu potențialul de a fi distrus de jucător prin sărituri de dedesubt.
 * `S` - **Bloc Secret / Întrebare:** Bloc solid interactiv din care jucătorul va putea obține puncte sau power-up-uri (monede, ciuperci care ii vor da viteza lui mario).
 * `t` - **Țeavă:** Obstacol vertical clasic (cu posibilitatea viitoare de a fi folosit pentru transport către hărți subterane).
