@@ -1,4 +1,6 @@
 
+![Mario](test/Mario%20pixeli.jpg)
+
 🍄🍄🍄🍄🍄🍄🍄🍄🍄🍄🍄🍄🍄🍄🍄
 1. incarcaTexturaInRAM(...)
 Ce face: Aceasta este funcția responsabilă cu încărcarea imaginilor (sprite-urilor) de pe hard disk direct în memoria RAM a calculatorului.
