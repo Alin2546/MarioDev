@@ -1,0 +1,26 @@
+Persoana 1: Motorul Grafic și Baza Jocului (Arhitectul)
+Obiectiv: Să facă ecranul negru să prindă viață și să ruleze fluid. El pune fundația peste care lucrează ceilalți.
+
+Task 1: Inițializarea și Game Loop-ul. Creează fereastra WinBGIm, setează bucla principală a jocului (while(inJoc)) și implementează Double Buffering-ul (swapbuffers(), cleardevice()) pentru ca jocul să nu aibă lag/flickering.
+
+Task 2: Încărcarea Texturilor. Scrie funcțiile care încarcă pozele (.jpg) în RAM (pentru Mario, pământ, nori) folosind pointeri (void* imgMario).
+
+Task 3: Redarea Hărții (Render). Scrie funcția generică care parcurge o matrice (harta) și, în funcție de literă (p, .), desenează poza corespunzătoare pe ecran (sistemul de tilemap de bază).
+
+️Persoana 2: Fizica și Controlul lui Mario (Fizicianul)
+Obiectiv: Să îl facă pe Mario să se miște corect, să sară și să nu cadă prin podea. Munca lui e pură matematică și interacțiune.
+
+Task 1: Variabilele Jucătorului. Setează coordonatele lui Mario (X, Y) și citește input-ul de la tastatură (W/A/S/D sau săgeți) pentru a schimba aceste coordonate.
+
+Task 2: Gravitația și Săritura. Implementează gravitația (Mario este mereu tras în jos de o variabilă vitezaY) și logica de săritură (când apeși W, vitezaY primește o valoare negativă care scade treptat).
+
+Task 3: Sistemul de Coliziune de Bază. Creează funcția de coliziune (Bounding Box). Mario trebuie să știe să se oprească atunci când lovește un bloc solid din matrice (p sau b), ca să poată sta pe platforme.
+
+Persoana 3: Level Design, Inamici și HUD (Regizorul)
+Obiectiv: Să populeze lumea creată de Omul 1 și explorată de Omul 2 cu obstacole, inamici și informații.
+
+Task 1: Construirea Hărții. Definește matricea/matricile nivelului (cu litere: p pentru podea, b pentru cărămizi, n pentru nori) și face "designul" nivelului 1.
+
+Task 2: Primul Inamic (Goomba). Definește o structură pentru Goomba (X, Y, direcție) și logica lui simplă: să meargă stânga-dreapta pe ecran, independent de Mario.
+
+Task 3: Interfața (HUD). Adaugă textul pe ecran. Scrie funcțiile care afișează permanent în colțul de sus un Scor (ex: 000000) și numărul de Vieți (ex: 3), care vor fi ulterior modificate pe măsură ce Mario avansează.
